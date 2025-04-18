@@ -1,0 +1,155 @@
+i/* user.css: User Dashboard Styling */
+
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f0ff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004085;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    text-align: center;
+}
+
+.dashboard-content h2 {
+    font-size: 1.8em;
+    color: #004085;
+    margin-bottom: 30px;
+}
+
+.dashboard-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-content form textarea {
+    width: 80%;
+    height: 120px;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #d1dce5;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.dashboard-content form textarea:focus {
+    box-shadow: inset 0 2px 6px rgba(0, 120, 255, 0.5);
+}
+
+.dashboard-content form button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.dashboard-content form button:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+}
+
+.dashboard-content form button:active {
+    transform: scale(1);
+}
+
+/* Analysis Result */
+.analysis-result {
+    margin-top: 30px;
+    background-color: #f1f8ff;
+    padding: 20px;
+    border: 1px solid #d1dce5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-result h3 {
+    font-size: 1.5em;
+    color: #004085;
+    margin-bottom: 15px;
+}
+
+.analysis-result .result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #e3f2ff;
+    border-radius: 8px;
+}
+
+.analysis-result .result-item .result-type {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.analysis-result .result-item .result-count {
+    color: #004085;
+}
+
+/* Logout Button */
+.dashboard-content .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #004085;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+}
+
+.dashboard-content .btn:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+}
+
+.dashboard-content .btn:active {
+    transform: scale(1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #777;
+    background-color: #f1f8ff;
+}
